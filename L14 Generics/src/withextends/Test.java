@@ -57,7 +57,7 @@ public class Test {
         IO.println();
     }
 
-    public static <E extends Person> void printNames(ArrayList<E> list) {
+    public <E extends Person> void printNames(ArrayList<E> list) {
         for (E p : list) {
             IO.print(p.getName() + " ");
         }

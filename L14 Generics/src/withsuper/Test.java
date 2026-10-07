@@ -38,7 +38,7 @@ public class Test {
         return max;
     }
 
-    public static <T extends Comparable<? super T>> T max(T x, T y, T z) {
+    public <T extends Comparable<? super T>> T max(T x, T y, T z) {
         T max = x;
         if (y.compareTo(max) > 0) max = y;
         if (z.compareTo(max) > 0) max = z;
